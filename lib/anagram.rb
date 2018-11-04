@@ -2,7 +2,7 @@
 
 class Anagram
   
-  attr_accessor
+  attr_accessor :words
   
   def match
     
