@@ -1,12 +1,9 @@
-# Your code goes here!
-
 class Anagram
+  attr_accessor :word_to_analyze
   
-  attr_accessor :words
-  
-  def initialize(words)
-    @words = words
-  end
+  def initialize(word_to_analyze)
+    @word_to_analyze = word_to_analyze 
+  end 
   
   def match(find_anagram_in_this_string) 
     puts "Must find #{self.word_to_analyze} inside the following string: #{find_anagram_in_this_string}"
@@ -17,5 +14,8 @@ class Anagram
     end 
   end
   
-  
-end
+end 
+
+
+listen = Anagram.new("listen")
+listen.match(%w(enlists google inlets inlest banana))
