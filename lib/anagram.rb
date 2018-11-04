@@ -8,7 +8,7 @@ class Anagram
   def match(find) 
     puts "Must find #{self.words} inside the following string: #{find}"
     find_anagram_in_this_string.find_all do |word| 
-      if word.split("").sort == self.words.split("").sort 
+      if word.split("").sort == self.word.split("").sort 
         word 
       end
     end 
